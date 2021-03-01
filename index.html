@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Netflix</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" href="images/iconenetflix.png" alt="Icone da NetFlix" />
+		<meta name="author" content="Matheus Campos,Dayson Portela" />
+		<meta name="description" content="site de series e filmes" />
+	</head>
+
+	<body>
+		<div class="structure">
+			<div class="mask"></div>
+			<div class="logo">
+				<a href="https://www.netflix.com/br/"
+					><img src="images/logonet.png" alt="logo da Netflix"
+				/></a>
+			</div>
+
+			<form id="form-user" class="form-login">
+				<div class="back-form">
+					<h1>Entrar</h1>
+					<input
+						class="box0"
+						type="phone"
+						type="email"
+						name="email"
+						placeholder="E-mail ou número de telefone"
+					/>
+					<input
+						class="box0"
+						type="password"
+						name="password"
+						placeholder="Senha"
+						minlength="6"
+					/>
+					<button type="submit">Entrar</button>
+
+					<div class="lembre">
+						<div class="remember">
+							<p>
+								<label class="check"
+									>Lembre-se de mim
+									<input class="box1" type="checkbox" name="Lembre-se de mim" />
+									<span class="checkbox1"></span>
+									<a href="https://www.netflix.com/br/LoginHelp"
+										>Precisa de Ajuda?</a
+									>
+								</label>
+							</p>
+						</div>
+					</div>
+
+					<div class="facecontainer">
+						<div class="face">
+							<img src="images/face.png" alt="Conectar com Facebook" />
+							<a
+								href="https://web.facebook.com/login.php?skip_api_login=1&api_key=163114453728333&kid_directed_site=0&app_id=163114453728333&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.9%2Fdialog%2Foauth%3Fapp_id%3D163114453728333%26cbt%3D1614429401185%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df12f362dccbc6d8%2526domain%253Dwww.netflix.com%2526origin%253Dhttps%25253A%25252F%25252Fwww.netflix.com%25252Ff308e2d8c614838%2526relation%253Dopener%26client_id%3D163114453728333%26display%3Dpopup%26domain%3Dwww.netflix.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.netflix.com%252Fbr%252Flogin%26locale%3Dpt_BR%26logger_id%3Dff533e41480b44%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df2b11df1a6bffb8%2526domain%253Dwww.netflix.com%2526origin%253Dhttps%25253A%25252F%25252Fwww.netflix.com%25252Ff308e2d8c614838%2526relation%253Dopener%2526frame%253Df14653c837fdfbc%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26sdk%3Djoey%26version%3Dv2.9%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2b11df1a6bffb8%26domain%3Dwww.netflix.com%26origin%3Dhttps%253A%252F%252Fwww.netflix.com%252Ff308e2d8c614838%26relation%3Dopener%26frame%3Df14653c837fdfbc%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=pt_BR&pl_dbl=0&_rdc=1&_rdr"
+							>
+								Conectar com Facebook</a
+							>
+						</div>
+					</div>
+
+					<div class="novo">
+						<p>
+							Novo por aqui?
+							<a href="https://www.netflix.com/br/" target="">Assine agora.</a>
+						</p>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<script src="src/Models/User.js"></script>
+		<script src="src/Controllers/UserController.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
